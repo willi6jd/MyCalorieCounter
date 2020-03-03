@@ -6,16 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".FoodActivity">
 
-    <GridLayout
+
+    <ListView
+        android:id="@+id/food_listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:text="@string/food">
-
-
-        </TextView>
-    </GridLayout>
-
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

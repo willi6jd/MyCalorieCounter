@@ -7,4 +7,9 @@
     <string name="caloricGoals">Caloric Goals</string>
     <string name="caloricGoalsiD">3</string>
     <string name="buttonHeight">245</string>
+    <string name="addFood">Add Food</string>
+    <string name="Name">Name</string>
+    <string name="Calories">Calories</string>
+    <string name="Fat">Fat</string>
+    <string name="Protein">Protein</string>
 </resources>

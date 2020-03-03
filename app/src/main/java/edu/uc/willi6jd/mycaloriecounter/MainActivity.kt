@@ -7,7 +7,6 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import edu.uc.willi6jd.mycaloriecounter.ui.main.MainFragment
 
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
