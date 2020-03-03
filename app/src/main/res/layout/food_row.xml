@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/listFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/listFoodCal"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listFoodFat"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:text="TextView"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/listFoodPro"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:text="TextView"
+        android:textStyle="bold"/>
+</LinearLayout>
