@@ -16,6 +16,18 @@
 
 
         </TextView>
+
+        <Button
+            android:id="@+id/addRecipeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#D81B60"
+            android:text="Add Recipe " />
+
+
     </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
