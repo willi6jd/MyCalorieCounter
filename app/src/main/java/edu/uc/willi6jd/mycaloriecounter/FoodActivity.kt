@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import edu.uc.willi6jd.mycaloriecounter.DTO.Food
 
 /**
  * This will control the view when they get to the food page
@@ -39,10 +40,10 @@ class FoodActivity : AppCompatActivity() {
             }
 
             // Build FoodItem Array
-            val foodItemArray = Array(20) { }
+            val foodItemArray = mutableListOf<Food>()
 
             // Push foodItem to FoodItem Array
-            //foodItemArray.add(foodItem(nm, cal, sgr, pro))
+            foodItemArray.add(foodItem(nm, cal, sgr, pro))
         }
     }
 
