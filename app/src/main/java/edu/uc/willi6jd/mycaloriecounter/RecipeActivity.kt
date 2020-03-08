@@ -11,6 +11,12 @@ import android.widget.EditText
 
 class RecipeActivity : AppCompatActivity() {
 
+    object RecipeItem {
+        var name = "";
+        var count = 0;
+        var Description = "";
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe)
@@ -25,24 +31,17 @@ class RecipeActivity : AppCompatActivity() {
             var itemDescription = findViewById<EditText>(R.id.recipeDescription); //Description of recipe: input text field, string
 
             // Put recipe item variables into recipeItem Object
-            fun recipeItem(nm: String, cnt: Int, dsc: String) {
-                RecipeItem.name = nm;
-                RecipeItem.count = cnt;
-                RecipeItem.Description = dsc;
+            fun recipeItem(name: String, count: Int, description: String) {
+                RecipeItem.name = name;
+                RecipeItem.count = count;
+                RecipeItem.Description = description;
             }
 
             // Build Recipe Array
             val recipeItemArray = Array(20) { }
 
             // Push recipeItem to Recipe Array
-            recipeItemArray.add(recipeItem(nm, cnt, dsc))
+            recipeItemArray.add(recipeItem(itemName, itemCount, itemDescription))
         }
     }
-
-    object RecipeItem {
-        var name = "";
-        var count = 0;
-        var Description = "";
-    }
-
 }
