@@ -26,9 +26,9 @@ class RecipeActivity : AppCompatActivity() {
         btnCreate.setOnClickListener {
 
             // Get input fields (by ID) store them to recipe item variables
-            var itemName = findViewById<EditText>(R.id.recipeName); //Name of recipe: input text field
-            var itemCount = findViewById<EditText>(R.id.recipeItemCount); //Number of food items in recipe: integer
-            var itemDescription = findViewById<EditText>(R.id.recipeDescription); //Description of recipe: input text field, string
+            var itemName = findViewById<EditText>(R.id.recipeName).toString(); //Name of recipe: input text field
+            var itemCount = findViewById<EditText>(R.id.recipeItemCount).toInt(); //Number of food items in recipe: integer
+            var itemDescription = findViewById<EditText>(R.id.recipeDescription).toString(); //Description of recipe: input text field, string
 
             // Put recipe item variables into recipeItem Object
             fun recipeItem(name: String, count: Int, description: String) {
