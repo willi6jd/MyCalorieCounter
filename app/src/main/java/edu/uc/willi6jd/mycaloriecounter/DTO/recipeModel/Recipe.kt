@@ -4,11 +4,9 @@ import edu.uc.willi6jd.mycaloriecounter.DTO.foodModel.Food
 
 class Recipe(
     val Name: String,
-    val Ingredients: ArrayList<Food> = arrayListOf<Food>(),
-    val Calories: Int,
-    val Fat: Int,
-    val Protein: Int
+    val Count: Int,
+    val Description: String
 ){
     override fun toString(): String {
-        return "Category [Name: ${this.Name}, Calories: ${this.Calories}, Fat: ${this.Fat}, Protein: ${this.Protein}]"    }
+        return "Category [Name: ${this.Name}, Count: ${this.Count}, Description: ${this.Description}]"    }
 }
