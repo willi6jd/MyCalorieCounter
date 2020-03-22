@@ -5,28 +5,21 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/listFoodName"
+        android:id="@+id/listRecipeName"
         android:layout_width="match_parent"
         android:layout_height="38dp"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/listFoodCal"
-        android:layout_width="128dp"
+        android:id="@+id/listRecipeCount"
+        android:layout_width="129dp"
         android:layout_height="38dp"
         android:text="TextView"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/listFoodFat"
-        android:layout_width="128dp"
-        android:layout_height="38dp"
-        android:text="TextView"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/listFoodPro"
-        android:layout_width="128dp"
+        android:id="@+id/listRecipeDescription"
+        android:layout_width="match_parent"
         android:layout_height="38dp"
         android:text="TextView"
         android:textStyle="bold" />

@@ -4,20 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FoodActivity">
+    tools:context=".ui.main.foodView.FoodActivity">
 
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
+
+        <ListView
             android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:text="@string/food">
-
-
-        </TextView>
-
+            android:id="@+id/food_listview"></ListView>
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"

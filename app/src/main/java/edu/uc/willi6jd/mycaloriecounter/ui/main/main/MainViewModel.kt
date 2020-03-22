@@ -1,11 +1,6 @@
-package edu.uc.willi6jd.mycaloriecounter.ui.main
+package edu.uc.willi6jd.mycaloriecounter.ui.main.main
 
-import android.app.PendingIntent.getActivity
-import android.content.Context
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import edu.uc.willi6jd.mycaloriecounter.DTO.Food
-import edu.uc.willi6jd.mycaloriecounter.FoodActivity
 import edu.uc.willi6jd.mycaloriecounter.Service.FileService
 
 /**
