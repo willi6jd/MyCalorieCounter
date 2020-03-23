@@ -1,4 +1,4 @@
-package edu.uc.willi6jd.mycaloriecounter.DTO
+package edu.uc.willi6jd.mycaloriecounter.DTO.foodModel
 
 
 class Food(

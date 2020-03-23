@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FoodActivity"></activity>
-        <activity android:name=".RecipeActivity"></activity>
-        <activity android:name=".GoalsActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.main.foodView.FoodActivity"></activity>
+        <activity android:name=".ui.main.recipeView.RecipeActivity"></activity>
+        <activity android:name=".ui.main.goalView.GoalsActivity"></activity>
+        <activity android:name=".ui.main.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

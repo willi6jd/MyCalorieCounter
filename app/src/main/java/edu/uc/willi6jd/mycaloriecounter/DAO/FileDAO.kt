@@ -1,35 +1,26 @@
 package edu.uc.willi6jd.mycaloriecounter.DAO
 
-import retrofit2.Call
-import android.content.Context
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import edu.uc.willi6jd.mycaloriecounter.DTO.Food
-import edu.uc.willi6jd.mycaloriecounter.FoodActivity
-import java.io.IOException
+import com.fasterxml.jackson.module.kotlin.KotlinModule
+import edu.uc.willi6jd.mycaloriecounter.DTO.foodModel.Food
+import java.io.File
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.fasterxml.jackson.module.kotlin.readValue
 
 /**
  * This will read data from the storage file and write data to it. will deliver the data to the service
  */
-interface FileDAO {}
+interface FileDAO {
+
     /**
-     * These may be parameters
-     * context: Context, fileName: String
+     * Changed from previous make but still unsure if this is the path to use for this type of process, The idea is to take in the filename which will be view and use that to pull the
+     * JSON file, the example uses hardcoded fileName but eventually will build pathBuilder = view + ".JSON".
+     *
+     * 
      */
-    fun getJsonDataFromAsset(context: Context):ArrayList<Food> {
-        val jsonString: String
-        try {
-            jsonString = context.assets.open("food.JSON").bufferedReader().use { it.readText() }
-        } catch (ioException: IOException) {
-            ioException.printStackTrace()
-            var food = ArrayList<Food>()
-            return food
-        }
-        val gson = Gson()
-        val listFromGson: ArrayList<Food> = gson.fromJson(
-            jsonString,
-            object : TypeToken<ArrayList<Any?>?>() {}.type
-        )
-        return listFromGson
-    }
+//    fun getJsonDataFromAsset(view : String):ArrayList<Food> {
+//        val mapper = jacksonObjectMapper().registerModule(KotlinModule())
+//        val jsonString: String = File("./src/main/resources/Food.json").readText(Charsets.UTF_8)
+//        val jsonTextList:ArrayList<Food> = mapper.readValue<ArrayList<Food>>(jsonString)
+//        return jsonTextList
+//    }
 }

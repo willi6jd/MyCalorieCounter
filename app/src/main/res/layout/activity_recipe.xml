@@ -4,18 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecipeActivity">
+    tools:context=".ui.main.recipeView.RecipeActivity">
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
+        <ListView
             android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:text="@string/recipe">
-
-
-        </TextView>
+            android:id="@+id/recipe_listview"></ListView>
 
         <Button
             android:id="@+id/addRecipeButton"

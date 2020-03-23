@@ -1,8 +1,8 @@
-package edu.uc.willi6jd.mycaloriecounter
+package edu.uc.willi6jd.mycaloriecounter.ui.main.goalView
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
+import edu.uc.willi6jd.mycaloriecounter.R
 
 /**
  * This will contorl the view when they get to the caloric goals page
