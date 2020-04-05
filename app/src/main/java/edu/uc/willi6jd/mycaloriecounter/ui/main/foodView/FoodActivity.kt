@@ -58,17 +58,17 @@ private class foodCustomerAdapter(context: Context): BaseAdapter(){
         private val mContext: Context
 
         //Test values for filling JSON
-        private val food = arrayListOf<String>("Peanut Butter", "Jelly", "Bread","Ham","Turkey")
-        private val cal = arrayListOf<String>("80", "90", "200","350","999")
-        private val fat = arrayListOf<String>("10", "2", "3","7","1")
-        private val pro = arrayListOf<String>("15", "0", "0","12","19")
+        private val _food = arrayListOf<String>("Peanut Butter", "Jelly", "Bread","Ham","Turkey")
+        private val _cal = arrayListOf<String>("80", "90", "200","350","999")
+        private val _fat = arrayListOf<String>("10", "2", "3","7","1")
+        private val _pro = arrayListOf<String>("15", "0", "0","12","19")
 
         init{
             mContext = context
         }
         //Rows in list
         override fun getCount(): Int {
-            return food.size
+            return _food.size
         }
 
         //Select item
@@ -90,19 +90,19 @@ private class foodCustomerAdapter(context: Context): BaseAdapter(){
             val rowMain = layoutInflater.inflate(R.layout.food_row, viewGroup, false)
 
             val nameTextView = rowMain.findViewById<TextView>(R.id.listFoodName)
-            var currentItem = "Name: " + food.get(position)
+            var currentItem = "Name: " + _food.get(position)
             nameTextView.text = currentItem
 
             val calTextView = rowMain.findViewById<TextView>(R.id.listFoodCal)
-            var currentCal = "Calories: " + cal.get(position)
+            var currentCal = "Calories: " + _cal.get(position)
             calTextView.text = currentCal
 
             val fatTextView = rowMain.findViewById<TextView>(R.id.listFoodFat)
-            var currentFat = "Fat: " + fat.get(position)
+            var currentFat = "Fat: " + _fat.get(position)
             fatTextView.text = currentFat
 
             val proTextView = rowMain.findViewById<TextView>(R.id.listFoodPro)
-            var currentPro = "Pro: " + pro.get(position)
+            var currentPro = "Pro: " + _pro.get(position)
             proTextView.text = currentPro
 
             return rowMain
