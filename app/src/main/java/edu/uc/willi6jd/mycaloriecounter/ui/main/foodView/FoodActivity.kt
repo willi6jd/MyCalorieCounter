@@ -1,5 +1,6 @@
 package edu.uc.willi6jd.mycaloriecounter.ui.main.foodView
 
+import android.annotation.SuppressLint
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -82,6 +83,7 @@ private class foodCustomerAdapter(context: Context): BaseAdapter(){
         }
 
         //Displays each row
+        @SuppressLint("ViewHolder")
         override fun getView(position: Int, convertView: View?, viewGroup: ViewGroup?): View {
 //            val textView = TextView(mContext)
 //            textView.text = "HERE"
