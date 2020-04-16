@@ -1,12 +1,13 @@
 package edu.uc.willi6jd.mycaloriecounter.DTO.foodModel
 
 
-class Food(
-    val Name: String,
-    val Calories: Int,
-    val Fat: Int,
-    val Protein: Int
+data class Food(
+    var Name: String = "",
+    var Calories: Int = 0,
+    var Fat: Int = 0,
+    var Protein: Int = 0
 ){
     override fun toString(): String {
-        return "Category [Name: ${this.Name}, Calories: ${this.Calories}, Fat: ${this.Fat}, Protein: ${this.Protein}]"    }
+        return "$Name $Calories $Fat $Protein"
+    }
 }

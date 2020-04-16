@@ -12,4 +12,5 @@
     <string name="Calories">Calories</string>
     <string name="Fat">Fat</string>
     <string name="Protein">Protein</string>
+    <string name="add_food">Add Food</string>
 </resources>

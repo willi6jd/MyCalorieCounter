@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "969216584783",
+    "firebase_url": "https://mycaloriecounter-fb015.firebaseio.com",
+    "project_id": "mycaloriecounter-fb015",
+    "storage_bucket": "mycaloriecounter-fb015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969216584783:android:7d11e82b8b3b2bf40f4e3a",
+        "android_client_info": {
+          "package_name": "edu.uc.willi6jd.mycaloriecounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969216584783-ms9s8tdcmmp8kt6sa3p0e5h7oi10st3c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwNM1j_C-gKw1fDSznXfP8Z4-6u0GVRyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969216584783-ms9s8tdcmmp8kt6sa3p0e5h7oi10st3c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
