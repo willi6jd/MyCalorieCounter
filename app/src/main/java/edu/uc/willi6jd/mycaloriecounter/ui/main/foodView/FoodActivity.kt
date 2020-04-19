@@ -6,9 +6,11 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.*
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
 import com.google.firebase.firestore.FirebaseFirestore
 import edu.uc.willi6jd.mycaloriecounter.DTO.foodModel.Food
 import edu.uc.willi6jd.mycaloriecounter.R
+import kotlinx.android.synthetic.main.activity_food.*
 
 
 /**
@@ -56,11 +58,11 @@ class FoodActivity : AppCompatActivity() {
         /*This will display food items from firebase in the food activity*/
         /* context for some reason is not being recognized */
 
-        // food.observe(this, Observer {
-        //    it ->
-          //  spnFood.adapter =
-            //    ArrayAdapter(context!!, R.layout.support_simple_spinner_dropdown_item, food)
-        //})
+         food.observe(this, Observer {
+            it ->
+             spnFood.adapter =
+                 ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, food /**/)
+        })
 
         val addButton = findViewById<Button>(R.id.addFoodBtn)
         addButton.setOnClickListener {
