@@ -12,7 +12,7 @@
     <Button
         android:id="@+id/recipeButton"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="295dp"
         android:backgroundTint="#F78994"
         android:text="@string/recipe" />
 
@@ -20,15 +20,9 @@
     <Button
         android:id="@+id/foodButton"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="295dp"
         android:backgroundTint="#CFD1BC"
         android:text="@string/food"></Button>
 
 
-    <Button
-        android:id="@+id/dailyButton"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:backgroundTint="#FC9A77"
-        android:text="@string/caloricGoals" />
 </LinearLayout>

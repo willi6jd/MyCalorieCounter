@@ -26,11 +26,7 @@ class MainActivity : AppCompatActivity() {
             val recipeIntent = Intent(this, RecipeActivity:: class.java )
             startActivity(recipeIntent)
         }
-        val dailyButton = findViewById<Button>(R.id.dailyButton)
-        dailyButton.setOnClickListener(){
-            val goalsIntent = Intent(this, GoalsActivity:: class.java )
-            startActivity(goalsIntent)
-        }
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.container,

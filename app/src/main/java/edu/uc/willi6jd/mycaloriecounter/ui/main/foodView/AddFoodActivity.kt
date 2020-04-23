@@ -12,8 +12,6 @@ import kotlinx.android.synthetic.main.activity_add_food.*
 
 class AddFoodActivity : AppCompatActivity() {
 
-
-
     lateinit var firestore :FirebaseFirestore
 
 
